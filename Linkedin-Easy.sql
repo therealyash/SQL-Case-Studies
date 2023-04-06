@@ -10,14 +10,12 @@ Assumption:
 There are no duplicates in the candidates table.
 */
 
-
-```
 SELECT candidate_id
 FROM candidates
 WHERE skill in ('Python', 'Tableau', 'PostgreSQL')
 group by candidate_id
 HAVING COUNT(*) >=3
 ORDER BY 1 ASC;
-```
+
 
 
