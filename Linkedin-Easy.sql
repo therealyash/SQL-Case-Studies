@@ -14,9 +14,9 @@ There are no duplicates in the candidates table.
 ```
 SELECT candidate_id
 FROM candidates
-where skill in ('Python', 'Tableau', 'PostgreSQL')
+WHERE skill in ('Python', 'Tableau', 'PostgreSQL')
 group by candidate_id
-having COUNT(*) >=3
+HAVING COUNT(*) >=3
 ORDER BY 1 ASC;
 ```
 
